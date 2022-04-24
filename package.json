@@ -1,0 +1,23 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "Projeto criado para reforçar conceitos em TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LCDS97/ts_ToDo-List.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LCDS97/ts_ToDo-List/issues"
+  },
+  "homepage": "https://github.com/LCDS97/ts_ToDo-List#readme",
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  }
+}
