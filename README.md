@@ -1,24 +1,39 @@
-# New Project
+## Projeto To-Do List em Typescript
 
-> ✨ Bootstrapped with Create Snowpack App (CSA).
+Projeto criado para reforçar conceitos em TypeScript
 
-## Available Scripts
+Etapas do Projeto:
 
-### npm start
+- Setup do Typescript
+- Bundle Typescript
+- Criando o Projeto
 
-Runs the app in the development mode.
-Open http://localhost:8080 to view it in the browser.
+### Introdução
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
+**tsconfig.json**
 
-### npm run build
+*Algumas configurações iniciais do TypeScript que foram apresentadas*
 
-Builds a static copy of your site to the `build/` folder.
-Your app is ready to be deployed!
+- outDir : Serve para compilar o seu arquivos TypeScript e escolher uma pasta de destino aonde vai estar o arquivo .js compilado
+- module : Serve para informar qual modulo de código ira ser compilado
+    Nesse caso alteramos de "commonjs" para "es6" afim de ele conseguir usar as funções de export, caso eu esteja utilizando alguma lib de node_modules
+**MAS**
+Temos um grande porém, pois o navegador não sabe utilizar a pasta de node_modules, então para resolver esse problema, iremos utilizar o conceito de Bundle, temos varios Bundle para ser utilizado com o TypeScript
 
-**For the best production performance:** Add a build bundler plugin like [@snowpack/plugin-webpack](https://github.com/snowpackjs/snowpack/tree/main/plugins/plugin-webpack) or [snowpack-plugin-rollup-bundle](https://github.com/ParamagicDev/snowpack-plugin-rollup-bundle) to your `snowpack.config.mjs` config file.
+Então nesse mini-projeto iremos utilizar o **Bundle Snowpack**
 
-### Q: What about Eject?
+No terminal:
+```
+npx create-snowpack-app . --template @snowpack/app-template-blank-typescript
+``` 
+Explicando o código:
+"npx create-snowpack-app" : Estamos criado o nosso projeto com o bundle do snowpack
+"." : Vai ser criado no diretório atual
+"--template": Utilizando a flag para especificar um modelo e após isso declaramos que utilizamos o modelo em branco do typescript
 
-No eject needed! Snowpack guarantees zero lock-in, and CSA strives for the same.
+
+
+
+
+[Projeto do Canal do Youtube - Web Dev Simplified](https://www.youtube.com/watch?v=jBmrduvKl5w)
+
