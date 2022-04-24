@@ -98,6 +98,11 @@ Quando vamos declarar algum tipo de Parametro precisamos definir seu tipo, pois 
 
 Com esse Type podemos referenciar esse Type qualquer vez que o nosso paramêtro task for necessário, tirando a necessidade de você replicar seu tipo toda vez que for declarar ele
 
+Para armazenarmos nossa tarefas, iremos utilizar o localStorage e faremos um push de array para armazenarmento
+
+Vamos declarar um array do type Task, e a partir disso o TypeScript ja vai oferecer todos os métodos de array para varíavel devido ao seu tipo
+![Array Task](./assets/taskArray.png)
+
 
 
 
