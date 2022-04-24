@@ -103,6 +103,13 @@ Para armazenarmos nossa tarefas, iremos utilizar o localStorage e faremos um pus
 Vamos declarar um array do type Task, e a partir disso o TypeScript ja vai oferecer todos os métodos de array para varíavel devido ao seu tipo
 ![Array Task](./assets/taskArray.png)
 
+Após no final do projeto criamos duas funções:
+- Para guardar as tasks no localStorage de JSON para string
+- Para ler as tasks que possui no localStorage, caso esteja vazio, declaramos um array vazio para ele
+
+*O próprio ts informa para tratar essa parte do localStorage, devido se não retornar somente, o que estiver lá e for consta como null, o código é quebrado*
+
+
 
 
 
