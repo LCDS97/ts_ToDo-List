@@ -52,6 +52,6 @@ form?.addEventListener("submit", e => {
 
   function loadTasks(): Task[]{
     const taskJSON = localStorage.getItem("TASKS")
-    if (taskJSON == null) return []
+    if (!taskJSON) return []
     return JSON.parse(taskJSON)
   }
